@@ -1,0 +1,9 @@
+<div class="w-full">
+  <ng-container *ngIf="isLoading | async">
+    <app-page-loader></app-page-loader>
+  </ng-container>
+
+  <ng-container *ngIf="!(isLoading | async)">
+    <div>Hello</div>
+  </ng-container>
+</div>
